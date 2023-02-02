@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="RegPage.css">
+    </head>
+<body>
+    <nav class="navbar navbar-dark bg-danger">
+        <div class="container-fluid">
+          <a class="navbar-brand"><strong>Donor's Registration</strong></a>
+          <form class="d-flex">
+            <a href="../Donation/Donation.html" class="navbar-brand" id= "login1"><small>Donate Blood</small></a>
+          </form>
+        </div>    
+    </nav>
+    <div class="form">
+        <div>
+        <form action="insert.php" method="post"> 
+        <div class="mb-3" style="text-align: center;">
+            <div class="mb-3">
+                <div> <label for="name1" class="form-label"><b>Name</b></label></div>
+                 <input type="text" name="Name" id="name1" class="form-control" placeholder="First Name" required>
+            </div>
+    
+            <div class="mb-3">
+                <label for="bloodtype"><b>Select your Blood Group</b></label>
+                <select name="b_group" id="option1" class="form-control" required>
+                <option value="BGroup">BLood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>    
+                </select>
+      
+              </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="aadharno" class="form-label"><b>Aadhar Number</b></label>
+            <input type="number" class="form-control" id="aadharno" aria-describedby="aadharHelp" placeholder = "XXXX XXXX XXXX" name = "aadhar_no" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="contact1" class="form-label"><b>Contact Number</b></label>
+            <input type="number" class="form-control" id="contact1" aria-describedby="contactHelp" placeholder = "XXXXXXXXXX" name = "contact" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"><b>Email</b></label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder = "name@example.com" name = "email" required>
+        </div>
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+            <label class="form-check-label" for="exampleCheck1" style="font-family: courier;">Agree terms and conditions</label>
+        </div>
+        <hr>
+        <div>
+            <input type="submit" name="submit" value="Register" class="btn btn-primary" >
+        </div>
+        </form>     
+        </div>    
+    </div>
+</body>
+</html>
